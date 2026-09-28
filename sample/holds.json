@@ -1,0 +1,19 @@
+{
+  "budget": 2,
+  "over": 5,
+  "bad_task_code": "E_BAD_TASK",
+  "bad_need_code": "E_BAD_NEED",
+  "bad_until_code": "E_BAD_UNTIL",
+  "dup_code": "E_DUP_HOLD",
+  "no_hold_code": "E_NO_HOLD",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "holds": [], "refused": [], "swept": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "hold", "task": "a", "need": 2, "until": 10 },
+    { "id": 2, "kind": "hold", "task": "b", "need": 3, "until": 10 },
+    { "id": 3, "kind": "hold", "task": "c", "need": 1, "until": 99 },
+    { "id": 4, "kind": "sweep", "at": 10 },
+    { "id": 5, "kind": "hold", "task": "d", "need": 4, "until": 30 },
+    { "id": 6, "kind": "sweep", "at": 10 }
+  ]
+}
